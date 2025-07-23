@@ -1,4 +1,5 @@
 @echo off
+set /p username=Enter your GitHub username: 
 set /p reponame=Enter GitHub repo name (leave blank to use folder name): 
 set /p description=Enter description (optional): 
 set /p msg=Initial commit message: 
@@ -33,7 +34,7 @@ if /I "%private%"=="y" (
 gh repo create %reponame% --description "%description%" %visibility% --source=. --remote=origin --confirm
 
 :: Add, commit, push
-git remote add origin https://github.com/bdwarker/%reponame%
+git remote add origin https://github.com/%username%/%reponame%
 git add .
 git commit -m "%msg%"
 git branch -M main

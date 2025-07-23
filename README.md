@@ -1,40 +1,72 @@
 # CGit
 
-**Instant GitHub Repository Creator Command Line**  
+**🔧 Your Complete GitHub Workflow Automation Tools (For Windows CMD)**
 
 ---
 
 ## ⚡ What is `CGit`?
 
-`CGit` is a custom batch script that automates the entire GitHub repository creation and initial push process — all from your local terminal.
+`CGit` is a custom batch script that automates the **initial GitHub repository creation** and **first commit push** — all from your local terminal.
 
-It’s designed to:
-- Create a new repo on your GitHub account
-- Add a README and `.gitignore` automatically
-- Initialize Git locally
-- Connect it to GitHub
-- Push your code
+### Features:
+- Creates a new private/public GitHub repository
+- Automatically adds a `README.md` and `.gitignore`
+- Initializes Git locally
+- Links to GitHub remote
+- Pushes everything with one command
 
 ---
-## 🤖 Initialize
-1. Place the cgit.bat file that you downloaded in a safe folder.
-2. Copy the folder location.
-3. Search "Edit the system environment variables" by pressing win+s shortcut.
-4. Click on "Environment Variables"
-5. Under "System Variables", find "Path" under "Variables" section.
-6. Select it and click on "Edit".
-7. Click on "New", paste the folder location that you copied in step 2.
-8. Click on "Ok". 
 
-### You have installed cgit and its ready to be used.
+## 🔁 What is `PGit`?
+
+`PGit` is your **post-creation workflow tool**. Think of it as the companion to `CGit`, made to handle regular updates to your repositories.
+
+### Features:
+- Checks for remote changes (`git fetch`)
+- Prompts you before pulling
+- Adds & commits your local changes
+- Pushes updates to GitHub safely
+
+---
+
+## 🤖 Installation
+
+### Step 1: Place the Scripts
+Place both `cgit.bat` and `pgit.bat` in a permanent directory. For example:  
+`C:\Scripts\GitTools`
+
+### Step 2: Add to System PATH
+1. Press `Win + S`, search for **"Edit the system environment variables"**
+2. Click **"Environment Variables"**
+3. Under **System Variables**, select `Path`, click **Edit**
+4. Click **New**, paste your script folder path (`C:\Scripts\GitTools`)
+5. Hit **OK** on all dialogs
+
+You're done. You can now use `cgit` and `pgit` from **any terminal**.
+
+---
 
 ## 🚀 How to Use
 
-1. **Place your project in a folder** (or create a new one)
-2. Open a terminal inside that folder
-3. Type:
+### 📦 To Create a New Repo
+1. Place your project in a folder (or create one)
+2. Open CMD in that folder
+3. Run:
 
 ```bash
 cgit
 ```
-4. Fill out the details.
+4. Fill in the prompts and let the magic happen.
+
+## 🔁 To Push Changes Later
+After making changes to your repo:
+1. Open CMD in the project folder
+2. Run:
+```
+pgit
+```
+3. Follow the prompts to pull (if needed), commit, and push.
+
+## 🧠 Notes
+- Ensure Git is installed and configured (git config --global user.name etc.)
+- Ensure that you have GitHub CLI installed and authenticated.
