@@ -1,4 +1,4 @@
-# CGit 🧙‍♂️
+# CGit
 
 **Instant GitHub Repository Creator Command Line**  
 
@@ -14,14 +14,19 @@ It’s designed to:
 - Initialize Git locally
 - Connect it to GitHub
 - Push your code
-- All in one clean, fast, and dramatic CLI spell ⚔️
 
 ---
 ## 🤖 Initialize
-1. Place the cgit.bat file that you downloaded in a folder.
+1. Place the cgit.bat file that you downloaded in a safe folder.
 2. Copy the folder location.
-3. Run install-cgit.bat.
-4. Paste the folder location you copied.
+3. Search "Edit the system environment variables" by pressing win+s shortcut.
+4. Click on "Environment Variables"
+5. Under "System Variables", find "Path" under "Variables" section.
+6. Select it and click on "Edit".
+7. Click on "New", paste the folder location that you copied in step 2.
+8. Click on "Ok". 
+
+### You have installed cgit and its ready to be used.
 
 ## 🚀 How to Use
 
